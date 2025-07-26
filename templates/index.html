@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommender</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Movie Recommendation System</h1>
+        <form id="genre-form">
+            <input type="text" id="genres" placeholder="Enter genres (e.g., Action, Comedy)" />
+            <button type="submit" id="submit">Predict</button>
+        </form>
+        
+        <div id="movie-details" class="hidden">
+            <img id="poster" alt="Movie Poster" style="max-width: 100%; height: auto; margin-top: 15px; border-radius: 5px;">
+            <h2 id="movie-name"></h2>
+            <p id="movie-year"></p>
+            <p id="movie-rating"></p>
+        </div>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

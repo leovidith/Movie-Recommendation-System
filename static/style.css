@@ -1,0 +1,114 @@
+body {
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    background-color: #121212;
+    margin: 0;
+    padding: 0;
+    color: #e0e0e0;
+}
+
+.container {
+    margin: 50px auto;
+    width: 80%;
+    max-width: 600px;
+    padding: 30px;
+    background: #1e1e1e;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: #e0e0e0;
+    border: 1px solid #3e3e3e;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff6b81;
+    font-weight: 700;
+}
+
+input, button {
+    padding: 12px;
+    margin: 10px 0;
+    font-size: 16px;
+    border-radius: 30px;
+    border: none;
+    width: 80%;
+    max-width: 400px;
+    color: #121212;
+    background-color: #e0e0e0;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    outline: 2px solid #ff6b81;
+    background-color: #ffffff;
+}
+
+button {
+    background: linear-gradient(45deg, #ff6b81, #ff4757);
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+button:active {
+    transform: scale(1);
+}
+
+#movie-details {
+    margin-top: 20px;
+    display: none;
+    color: white;
+    text-align: center;
+    visibility: hidden;
+    opacity: 0;
+}
+
+#movie-details img {
+    max-width: 80%;
+    height: auto;
+    border-radius: 5px;
+    margin-top: 15px;
+}
+
+#movie-details h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+
+#movie-details p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.hidden {
+    display: none;
+}
+
+#movie-details:not(.hidden) {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+}
+
+@media (max-width: 768px) {
+    .container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    input, button {
+        width: 100%;
+    }
+
+    img {
+        width: 150px;
+    }
+}
