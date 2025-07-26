@@ -32,7 +32,7 @@ y = movies_cleaned['user_score']
 X = X.select_dtypes(include=[np.number])
 
 # TMDb API Key and Base URL
-TMDB_API_KEY = 'd42dce24f3a7d10a51442d710625251e'  # Your TMDb API key here
+TMDB_API_KEY = 'd42dce24f3a7d10a51442d710625251'  # Your TMDb API key here
 TMDB_BASE_URL = 'https://api.themoviedb.org/3'
 
 @app.route('/')
